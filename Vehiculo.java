@@ -1,3 +1,7 @@
-public class Vehiculo{
-System.out.println("hola mundo ");
+public class Vahiculo {
+    public static void main(String []args) {
+        System.out.println("Hola mundo");
+        
+    }
+    
 }
