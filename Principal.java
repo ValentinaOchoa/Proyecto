@@ -67,7 +67,7 @@ public class Principal {
                 case 666:
                 Sensor[] sensor1 = Sensor.SensoresOrdenados();
                 for(int i=0;i<sensor1.length;i++){
-                    System.out.println(sensor1[i].toString()); 
+                    System.out.println("Sensores Temperatura Ordenados" + sensor1[i].toString()); 
                 }
 
                 break;
