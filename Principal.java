@@ -65,6 +65,10 @@ public class Principal {
                 System.out.println("Información sensores temperatura: " + Sensor.toStringSensoresTemperatura());
                 break;
                 case 666:
+                Sensor[] sensor1 = Sensor.SensoresOrdenados();
+                for(int i=0;i<sensor1.length;i++){
+                    System.out.println(sensor1[i].toString()); 
+                }
 
                 break;
                 default:
@@ -75,4 +79,7 @@ public class Principal {
     }
 
 }
+
+
+
 
