@@ -13,7 +13,6 @@ public class  Vehiculo{
   } 
   public Vehiculo(int mo, String ma, double va){
       this(mo, ma,va,"verde");
-    
   } 
   public Vehiculo(int mo, String ma, double va, String co){
    this.modelo = mo;
@@ -22,8 +21,7 @@ public class  Vehiculo{
    this.color = co;
    vehiculos[posAnadir] = this; 
    posAnadir  ++; // Aumento de atributo en 1 
-   
-  } 
+  }  
   public int getModelo(){
       return this.modelo;
 
