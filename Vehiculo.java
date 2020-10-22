@@ -49,7 +49,7 @@ public class  Vehiculo{
   }
   
   public String toString(){
-   return modelo + " "+ marca + " "+ valorComercial + " "+ color;  
+   return this.modelo + " "+ this.marca + " "+ this.valorComercial + " "+ this.color;  
   }
   public static String toStringVehiculos(){
     String salida = "";

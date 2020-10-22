@@ -35,7 +35,7 @@ public class Sensor{
   }
 
   public String toString(){
-      return tipo +" "+ valor;
+      return this.tipo +" "+ this.valor;
   }
 
   public static String toStringSensores(){
