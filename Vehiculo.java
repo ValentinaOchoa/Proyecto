@@ -9,7 +9,8 @@ public class  Vehiculo{
   private String color;
 
   public Vehiculo(){
-
+   Vehiculo.vehiculos[posAnadir] = this; 
+   Vehiculo.posAnadir  ++;
   } 
   public Vehiculo(int mo, String ma, double va){
       this(mo, ma,va,"verde");
@@ -19,8 +20,8 @@ public class  Vehiculo{
    this.marca = ma;
    this.valorComercial = va;
    this.color = co;
-   vehiculos[posAnadir] = this; 
-   posAnadir  ++; // Aumento de atributo en 1 
+   Vehiculo.vehiculos[posAnadir] = this; 
+   Vehiculo.posAnadir  ++; // Aumento de atributo en 1 
   }  
   public int getModelo(){
       return this.modelo;
@@ -52,24 +53,24 @@ public class  Vehiculo{
    return this.modelo + " "+ this.marca + " "+ this.valorComercial + " "+ this.color;  
   }
   public static String toStringVehiculos(){
-    String salida = "";
+    String info = "";
     for(int i = 0; i < posAnadir; i++){
-      salida = salida + vehiculos[i].toString() + "\n";
+      info = info + vehiculos[i].toString() + "\n";
       
     }   
-    return salida;
+    return info;
   } 
    public static int cantidadVehiculos(){
     return posAnadir;
   }
    public static String toStringVehiculosVerde(){
-    String salida = "";
+    String infoVerde = "";
     for(int i = 0; i < posAnadir; i++){
       if(vehiculos[i].getColor().equals("verde")){
-          salida = salida + vehiculos[i].toString() + "\n";
+          infoVerde = infoVerde + vehiculos[i].toString() + "\n";
       }
     }   
-    return salida;
+    return infoVerde;
 }   
 
 }
